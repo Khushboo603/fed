@@ -180,3 +180,26 @@ function test() {
   document.querySelector('.video-container video').remove();
 }
 // Modal ends here
+// Photo section Start
+var lightbox = document.createElement('div');
+lightbox.setAttribute('class','lightbox');
+document.body.appendChild(lightbox);
+
+var photos = document.querySelectorAll('.lgt-img');
+photos.forEach(function showdiv(image) {
+  image.addEventListener('click', function showactive(e) {
+    lightbox.classList.add('active');
+    var img = document.createElement('img');
+    img.src = image.src;
+    while (lightbox.firstChild) {
+      lightbox.removeChild(lightbox.firstChild);
+    }
+    lightbox.appendChild(img);
+  })
+})
+
+lightbox.addEventListener('click', function showactive(e) {
+  if (e.target !== e.currentTarget) return
+  lightbox.classList.remove('active')
+})
+// Photo section End
