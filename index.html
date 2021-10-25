@@ -1,28 +1,28 @@
 <!doctype html>
 
 <!-- If multi-language site, reconsider usage of html lang declaration here. -->
-<html lang="en"> 
+<html lang="en">
 
 <head>
- 
+
   <meta charset="utf-8">
 
   <title>Wheather Check</title>
-  
+
   <!-- 120 word description for SEO purposes goes here. Note: Usage of lang tag. -->
   <!-- <meta name="description" lang="en" content=""> -->
-  
+
   <!-- Keywords to help with SEO go here. Note: Usage of lang tag.  -->
   <!-- <meta name="keywords" lang="en" content=""> -->
-  
+
   <!-- View-port Basics: http://mzl.la/VYREaP -->
   <!-- This meta tag is used for mobile device to display the page without any zooming,
        so how much the device is able to fit on the screen is what's shown initially. 
        Remove comments from this tag, when you want to apply media queries to the website. -->
   <!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
-  
+
   <!-- To adhear no-cache for Chrome -->
-<!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
+  <!--   <meta http-equiv="cache-control" content="no-store, no-cache, must-revalidate" />
   <meta http-equiv="Pragma" content="no-store, no-cache" />
   <meta http-equiv="Expires" content="0" /> -->
 
@@ -33,9 +33,9 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
   <!-- Default style-sheet is for 'media' type screen (color computer display).  -->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css" >
+  <link rel="stylesheet" media="screen" href="assets/css/style.css">
 
-  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->	
+  <!-- html5shiv aka html5 shim. Supporting HTML5 and CSS for IE browsers less than IE9. -->
   <!--[if lt IE 9]>  
   <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>  
   <![endif]-->
@@ -92,7 +92,8 @@
               <span class="city-name" id="city-loc"></span>
               <ul class="weather-temp">
                 <li class="temp" id="tem"></li>
-                <li class="weather-img"><img src="./assets/images/icons/icon-1.svg" id="weather-icon-img" alt="weather-image"></li>
+                <li class="weather-img"><img src="./assets/images/icons/icon-1.svg" id="weather-icon-img"
+                    alt="weather-image"></li>
               </ul>
               <ul class="weather-type">
                 <li class="humidity-icon" id="humidity"></li>
@@ -109,11 +110,52 @@
         </div>
       </div>
       <!-- banner ends here -->
+      <!-- live cameras section starts here -->
+      <section class="live-cameras" id="liveCam">
+        <div class="wrapper">
+          <h2>Live cameras</h2>
+          <ul>
+            <li>
+              <a href="#FIXME" title="image" class="playvideobtn" data-video="assets/video/Video1.mp4">
+                <img src="./assets/images/live-camera-1.jpg" alt="live-camera-1-image">
+                <img src="./assets/images/play-button.png" alt="play-button">
+              </a>
+              <span class="local-city">New York</span>
+              <span class="lacal-date">8 oct, 8:00AM</span>
+            </li>
+            <li>
+              <a href="#FIXME" title="image" class="playvideobtn" data-video="assets/video/Video2.mp4">
+                <img src="./assets/images/live-camera-2.jpg" alt="live-camera-2-image">
+                <img src="./assets/images/play-button.png" alt="play-button">
+              </a>
+              <span class="local-city">Los Angeles</span>
+              <span class="lacal-date">8 oct, 8:00AM</span>
+            </li>
+            <li>
+              <a href="#FIXME" title="image" class="playvideobtn" data-video="assets/video/Video3.mp4">
+                <img src="./assets/images/live-camera-3.jpg" alt="live-camera-3-image">
+                <img src="./assets/images/play-button.png" alt="play-button">
+              </a>
+              <span class="local-city">Chicago</span>
+              <span class="lacal-date">8 oct, 8:00AM</span>
+            </li>
+            <li>
+              <a href="#FIXME" title="image" class="playvideobtn" data-video="assets/video/Video4.mp4">
+                <img src="./assets/images/live-camera-4.jpg" alt="live-camera-4-image">
+                <img src="./assets/images/play-button.png" alt="play-button">
+              </a>
+              <span class="local-city">London</span>
+              <span class="lacal-date">8 oct, 8:00AM</span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- live cameras section ends here -->
     </main>
     <!--main section end-->
 
     <!--footer section start-->
-    <footer>      
+    <footer>
 
     </footer>
     <!--footer section end-->
@@ -121,7 +163,8 @@
   </div>
   <!--container end-->
 
-<!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
+  <!-- <script src="js/vendors/jquery-1.8.3.min.js"></script>
 <script src="js/script.js"></script> -->
 </body>
+
 </html>
