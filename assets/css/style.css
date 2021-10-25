@@ -665,6 +665,9 @@ h1 {
 .breadcrumb li {
   margin-right: 38px;
   position: relative;
+}
+
+.breadcrumb li a {
   color: #A4A6AE;
   font-size: 14px;
 }
